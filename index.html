@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Identifacion</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap");
+    </style>
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <div class="conteiner">
+      <div class="card back">
+        <p class="card-back-text">000</p>
+      </div>
+      <div class="card front">
+        <div class="figure">
+          <div class="colored-circle"></div>
+          <div class="circle"></div>
+        </div>
+        <p class="ID">0000 0000 0000 0000</p>
+        <div class="text2">
+          <p class="name">JANE APPLESEED</p>
+          <p class="date">00/00</p>
+        </div>
+      </div>
+
+      <div class="main">
+        <div class="start">
+          <p class="cardholder">CARDHOLDER NAME</p>
+          <input
+            type="text"
+            placeholder="e.g. Jane Appleseed"
+            id="input-text"
+          />
+          <span class="error" id="name-error"></span>
+        </div>
+
+        <div class="middle">
+          <p class="cardnumber">CARD NUMBER</p>
+          <input
+            type="text"
+            placeholder="e.g. 1234 5678 9123 0000"
+            id="input-text2"
+          />
+          <span class="error" id="number-error"></span>
+        </div>
+
+        <div class="data">
+          <div class="figures">
+            <p class="bottom">EXP. DATE {MM/YY}</p>
+            <div class="text5">
+              <input type="text" placeholder="MM" id="Month" />
+              <input type="text" placeholder="YY" id="Year" />
+            </div>
+            <span class="error" id="date-error"></span>
+          </div>
+          <div class="date">
+            <p class="bottom2">CVC</p>
+            <input type="text" placeholder="e.g 123" id="CVC" />
+            <span class="error" id="cvc-error"></span>
+          </div>
+        </div>
+
+        <button class="last">
+          <h1 class="last-text">Confirm</h1>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
